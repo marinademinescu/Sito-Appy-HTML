@@ -1,0 +1,42 @@
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-left h1 {
+    font-size: 45px;
+  }
+
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background-color: var(--secondary);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    padding: 20px;
+    border-radius: var(--border-radius);
+  }
+  .nav-ul.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-left h1 {
+    font-size: 35px;
+  }
+  .hero-left p {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,22 @@
+/* Fonts e colori base */
+:root {
+  --font-family: 'Inter', sans-serif;
+
+  /* Theme Light */
+  --bg-light: #ffffff;
+  --text-light: #414142;
+  --primary: #3abaB4;
+  --primary-hover: #45A39E;
+  --secondary: #f2f2f2;
+  --dark: #242424;
+
+  --border-radius: 4px;
+  --transition: 0.3s ease;
+}
+
+body.dark {
+  --bg-light: #242424;
+  --text-light: #f2f2f2;
+  --secondary: #2d2d2d;
+  --primary-hover: #3a9a93;
+}
