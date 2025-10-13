@@ -1,124 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Appy HTML Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appy HTML-DEMO</title>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/theme.css">
-  <link rel="stylesheet" href="css/buttons.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-  <!-- Boxicons -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js"></script>
 
-  <!-- JS -->
-  <script defer src="js/script.js"></script>
+
 </head>
-<body class="light">
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header-container">
-      <div class="logo">
-        <img src="img/logo/idOyeCj4_W_logo.png" alt="Logo">
-      </div>
 
-      <nav class="nav">
-        <ul class="nav-ul">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li>
-            <a href="#">Resources &#9662;</a>
-            <ul class="dropdown">
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">404</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+<body class="theme-light">
 
-      <div class="header-right">
-        <input type="checkbox" id="dark-mode">
-        <label for="dark-mode" class="theme-switch"></label>
+    <div class="page-wrapper">
+        <header class="wrapper-header container">
+            <div class="container-head-wrapper">
+                <div class="logo">
+                    <img src="/assets/immagini/img-logo/idOyeCj4_W_logos.png" alt="">
+                </div>
 
-        <button class="btn btn-primary">Request code</button>
+                <nav class="menu-head-wrapper">
+                    <ul class="nav-ul-head">
+                        <li> <a href="">About</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">Resourse &#9662; </a>
+                            <ul class="dropdown-head">
+                                <li><a href="">Help Center</a></li>
+                                <li><a href="">404</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
 
-        <button class="hamburger" id="hamburger">
-          <i class='bx bx-menu'></i>
-        </button>
-      </div>
+                <div class="header-right">
+                    <input type="checkbox" id="dark-mode">
+                    <label for="dark-mode" class="theme-switch"></label>
+
+                    <button class="btn btn-primario">Request code</button>
+
+                    <button class="hamburger" id="hamburger"><i class='bx bx-menu'></i></button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="container hero-wrapper">
+            <div class="hero-left">
+                <h1>Your website, <br> reimagined</h1>
+                <p>Landing page template works on all devices.</p>
+
+                <form action="">
+                    <input type="text" placeholder="Phone number">
+                    <button class="btn btn-primario">Request code</button>
+                </form>
+
+                <ul class="hero-ul">
+                    <li>Lorem ipsum is placeholder text commonly.</li>
+                    <li>Excepteur sint occaecat cupidatat.</li>
+                    <li>Lorem ipsum is placeholder text commonly.</li>
+
+                </ul>
+
+            </div>
+            <div class="hero-right">
+                <img src="/assets/immagini/glow-illustration/cover.jpg.jpg" alt="">
+                <img src="/assets/immagini/glow-illustration/mockup-image-01.jpg" alt="">
+                <video src="/assets-video/video-head.mp4"></video>
+                <button class="play-button">&#9658;</button>
+            </div>
+
+        </section>
+
+        <section class="container stat-wrapper">
+            <div class="stat-item">
+                <h3>2.4M</h3>
+                <p>Days turn around</p>
+            </div>
+            <div class="stat-item">
+                <h3>7M</h3>
+                <p>Days turn around</p>
+            </div>
+            <div class="stat-item">
+                <h3>7.4%</h3>
+                <p>Days turn around</p>
+            </div>
+            <div class="stat-item">
+                <h3>49K</h3>
+                <p>Days turn around</p>
+            </div>
+
+        </section>
+
     </div>
-  </header>
 
-  <!-- HERO -->
-  <section class="hero container">
-    <div class="hero-left">
-      <h1>Your website,<br>reimagined</h1>
-      <p>Landing page template works on all devices.</p>
-      <form>
-        <input type="text" placeholder="Phone number">
-        <button class="btn btn-primary">Request code</button>
-      </form>
-      <ul class="features">
-        <li>✓ Lorem ipsum placeholder</li>
-        <li>✓ Excepteur sint occaecat</li>
-        <li>✓ Lorem ipsum placeholder</li>
-      </ul>
-    </div>
-    <div class="hero-right">
-      <img src="img/glow-illustration/cover.jpg" alt="Illustration">
-    </div>
-  </section>
+    <section class="container carousel">
+        <div class="header carousel">
+            <h1>From rough design files, to <br> powerful products</h1>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat <br> nulla
+                pariatur
+                excepteur sint occaecat cupidatat.</p>
+        </div>
 
-  <!-- STATS -->
-  <section class="stats container">
-    <div class="stat-item"><h3>2.4M</h3><p>Days turn around</p></div>
-    <div class="stat-item"><h3>7M</h3><p>Users</p></div>
-    <div class="stat-item"><h3>7.4%</h3><p>Growth</p></div>
-    <div class="stat-item"><h3>49K</h3><p>Downloads</p></div>
-  </section>
+        <div class="carousel-wrapper">
+            <div class="carousel-slide"><img src="/assets/immagini/img-carousell/OIP-1.carousell.jpg.jpg"><button
+                    class="btn btn-primary">Learn
+                    more</button></div>
+            <div class="carousel-slide"><img src="/assets/immagini/img-carousell/OIP-2.carousell.jpg.jpg"><button
+                    class="btn btn-primary">Learn
+                    more</button></div>
+            <div class="carousel-slide"><img src="/assets/immagini/img-carousell/OIP-3.carousell.jpg.jpg"><button
+                    class="btn btn-primary">Learn
+                    more</button></div>
+            <div class="carousel-slide"><img src="/assets/immagini/img-carousell/OIP.carousell.jpg.jpg"><button
+                    class="btn btn-primary">Learn
+                    more</button></div>
+        </div>
 
-  <!-- CAROUSEL -->
-  <section class="carousel container">
-    <h2>From rough design files, to powerful products</h2>
-    <div class="carousel-wrapper">
-      <div class="carousel-item">
-        <img src="img/carousel/OIP-1.carousell.jpg" alt="">
-        <button class="btn btn-primary">Learn more</button>
-      </div>
-      <div class="carousel-item">
-        <img src="img/carousel/OIP-2.carousell.jpg" alt="">
-        <button class="btn btn-primary">Learn more</button>
-      </div>
-      <div class="carousel-item">
-        <img src="img/carousel/OIP-3.carousell.jpg" alt="">
-        <button class="btn btn-primary">Learn more</button>
-      </div>
-      <div class="carousel-item">
-        <img src="img/carousel/OIP-4.carousell.jpg" alt="">
-        <button class="btn btn-primary">Learn more</button>
-      </div>
-    </div>
-  </section>
+        <div class="frecce-carousel">
+            <div class="frecce-button">
+                <button class="button-prev"><span><i class='bx bx-left-arrow-alt'></i></span> </button>
+                <button class="button-next"> <span><i class='bx bx-right-arrow-alt'></i></span></button>
 
-  <!-- FOOTER -->
-  <footer class="footer container">
-    <div class="footer-top">
-      <img src="img/logo/idOyeCj4_W_logo.png" alt="Logo">
-      <div class="footer-links">
-        <div><h6>Products</h6><a href="#">Drag And Drop</a></div>
-        <div><h6>Resources</h6><a href="#">Blog</a></div>
-        <div><h6>Company</h6><a href="#">About us</a></div>
-        <div><h6>Support</h6><a href="#">Docs</a></div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© Cruip.com. All rights reserved.</span>
-      <div class="social">
-        <a href="#"><i class='bx bxl-twitter'></i></a>
-        <a href="#"><i class='bx bx
+            </div>
+
+
+
+    </section>
+
+
+    <section class="container video">
+        <div class="video-header">
+            <h1 class="vh1">Turn your ideas into reality in <br> seconds</h1>
+            <p class="vp">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                <br> nulla pariatur excepteur sint occaecat cupidatat.
+
+        </div>
+
+        <div class="video-filter">
+            <button><span><i class='bx bx-stats'></i></span>Getting Started</button>
+            <button><span><i class='bx bx-list-ul'></i></span>Collection list</button>
+            <button><span><i class='bx bx-selection'></i></span>Element Hierarchy</button>
+            <button><span><i class='bx bxs-objects-vertical-bottom'></i></span>Styling Basics</button>
+            <button><span><i class='bx bxs-objects-vertical-bottom'></i></span>Image Field</button>
+
+        </div>
+
+        <div class="video-list">
+            <div class="video-play">
+                <img src="/assets/immagini/glow-illustration/OIP.jpg" alt="">
+                <p>Using index pages</p>
+                <p>2 Min</p>
+            </div>
+            <div class="video-play">
+                <img src="/assets/immagini/glow-illustration/OIP.jpg" alt="">
+                <p>Using index pages</p>
+                <p>2 Min</p>
+            </div>
+            <div class="video-play">
+                <img src="/assets/immagini/glow-illustration/OIP.jpg" alt="">
+                <p>Using index pages</p>
+                <p>2 Min</p>
+            </div>
+            <div class="video-play">
+                <img src="/assets/immagini/glow-illustration/OIP.jpg" alt="">
+                <p>Using index pages</p>
+                <p>2 Min</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container mockup">
+        <div class="mockup-header">
+            <h2>Build and style every element <br> to perfection</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat <br> nulla
+                pariatur excepteur sint occaecat cupidatat.</p>
+        </div>
+
+        <div class="mockup-item">
+            <div>
+                <span>1</span>
+                <img src="/assets/immagini/img-mokup/mockup-image-02.jpg" alt="">
+            </div>
+            <div>
+                <span>2</span>
+                <img src="/assets/immagini/img-mokup/mockup-image-03.jpg" alt="">
+            </div>
+            <div>
+                <span>3</span>
+                <img src="/assets/immagini/img-mokup/mockup-image-04.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="container start">
+        <div class="start-header">
+            <h2>Start building for free, then <br> add a plan to go live</h2>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt <br> mollit
+                laborum — semper quis lectus nulla.</p>
+        </div>
+
+        <div class="start-body">
+            <div class="start-list">
+                <p>All plans include:</p>
+
+                <ul>
+                    <li><span>Unlimited domains</span></li>
+                    <li><span>Unlimited web pages</span></li>
+                    <li><span>Conversion analytics</span></li>
+                    <li><span>A/B testing</span></li>
+                    <li><span>Exclusive channels</span></li>
+                    <li><span>Free resources</span></li>
+                    <li><span>Landing page builder</span></li>
+                    <li><span>Smart forms and reports</span></li>
+
+                </ul>
+
+            </div>
+
+            <div class="start-cards">
+                <div>
+                    <div>
+                        <div>
+                            <p>Yearly</p>
+                            <p>-40%</p>
+                        </div>
+                        <div>
+                            <span>$</span>
+                            <span>27</span>
+                            <span>/billed yearly</span>
+                        </div>
+                        <div>
+                            <p>— Lorem ipsum dolor amet sit consect adipiscing.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button><a href=""><span>Go Premiums</span></a></button>
+                    </div>
+
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <p>Yearly</p>
+                            <p>-40%</p>
+                        </div>
+                        <div>
+                            <span>$</span>
+                            <span>27</span>
+                            <span>/billed yearly</span>
+                        </div>
+                        <div>
+                            <p>— Lorem ipsum dolor amet sit consect adipiscing.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button><a href=""><span>Go Premiums</span></a></button>
+                    </div>
+
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <p>Yearly</p>
+                            <p>-40%</p>
+                        </div>
+                        <div>
+                            <span>$</span>
+                            <span>27</span>
+                            <span>/billed yearly</span>
+                        </div>
+                        <div>
+                            <p>— Lorem ipsum dolor amet sit consect adipiscing.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button><a href=""><span>Go Premiums</span></a></button>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container testimonials">
+
+        <div class="testimonials-right">
+            <div>
+                <img src="img/img.testimonial/testimonial-01.jpg" alt="1">
+                <p>“ This is a great app and the value is amazing. Since I purchased it I have been using it
+                    everyday! Highly recommend it. “</p>
+
+                <span>—Andy Croll</span><span><a href="">,Appy.com</a></span>
+            </div>
+            <div>
+                <img src="img/img.testimonial/testimonial-02.jpg" alt="2">
+
+                <p>“ This is a great app and the value is amazing. Since I purchased it I have been using it
+                    everyday! Highly recommend it. “</p>
+
+                <span>—Andy Croll</span><span><a href="">,Appy.com</a></span>
+            </div>
+        </div>
+        <div class="testimonials-left">
+            <div>
+                <img src="img/img.testimonial/testimonial-03.jpg" alt="3">
+
+                <p>“ This is a great app and the value is amazing. Since I purchased it I have been using it
+                    everyday! Highly recommend it. “</p>
+
+                <span>—Andy Croll</span><span><a href="">,Appy.com</a></span>
+            </div>
+            <div>
+                <img src="img/img.testimonial/testimonial-04.jpg" alt="4">
+
+                <p>“ This is a great app and the value is amazing. Since I purchased it I have been using it
+                    everyday! Highly recommend it. “</p>
+
+                <span>—Andy Croll</span><span><a href="">,Appy.com</a></span>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container clarity">
+        <h2>Put clarity at the center of <br> your website</h2>
+        <div class="clarity-card">
+            <div class="card"><i class='bx bx-objects-vertical-bottom'></i>
+                <h3>Simpler Sharing</h3>
+                <p>Lorem ipsum dolor amet sit consect adipiscing.</p>
+            </div>
+            <div class="card"><i class='bx bx-scatter-chart'></i>
+                <h3>Simpler Sharing</h3>
+                <p>Lorem ipsum dolor amet sit consect adipiscing.</p>
+            </div>
+            <div class="card"><i class='bx bxl-netlify'></i>
+                <h3>Simpler Sharing</h3>
+                <p>Lorem ipsum dolor amet sit consect adipiscing.</p>
+            </div>
+            <div class="card"><i class='bx bx-qr'></i>
+                <h3>Simpler Sharing</h3>
+                <p>Lorem ipsum dolor amet sit consect adipiscing.</p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="container free">
+        <h3>Free until you're ready <br> to launch</h3>
+        <div>
+            <input id="box-input" type="text" placeholder="Phone number ">
+            <button>Request code</button>
+        </div>
+
+
+    </section>
+
+    <footer class="container footer">
+        <div class="footer-link">
+            <img src="/assets/immagini/img-logo/idOyeCj4_W_logos.png" alt="logo">
+            <div>
+                <h6>Products</h6>
+                <ul>
+                    <li><a href="">Drag And Drop</a></li>
+                    <li><a href="">Visual Studio X</a></li>
+                    <li><a href="">Easy Content</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h6>Resources</h6>
+                <ul>
+                    <li><a href="">Industries and tools</a></li>
+                    <li><a href="">Use cases</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Online events</a></li>
+                    <li><a href="">Nostrud exercitation</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h6>Company</h6>
+                <ul>
+                    <li><a href="">Diversity & inclusion</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Press</a></li>
+                    <li><a href="">Customer stories</a></li>
+                    <li><a href="">Online communities</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h6>Support</h6>
+                <ul>
+                    <li><a href="">Documentation</a></li>
+                    <li><a href="">Tutorials & guides</a></li>
+                    <li><a href="">Webinars</a></li>
+                    <li><a href="">Open-source</a></li>
+                </ul>
+
+
+            </div>
+
+        </div>
+        <div class="footer-icon">
+            <div class="cruip">p© Cruip.com. All rights reserved.</div>
+            <div>
+                <a href="">Terms</a>
+                <a href="">Privacy Policy</a>
+            </div>
+
+            <div class="footer-icon">
+                <ul>
+                    <li><a href=""><i class='bx bxl-twitter'></i></a></li>
+                    <li><a href=""><i class='bx bxl-github'></i></a></i></li>
+                    <li><a href=""><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href=""><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href=""><i class='bx bxl-linkedin-square'></i></a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
