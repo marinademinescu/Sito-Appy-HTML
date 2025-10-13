@@ -1,2 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+:root {
+    --primary-color:  #3abab4;
+    --secondary-color: #ffcc89;
+    --primary-hover: #45a39e;
+    --secondary-color: #242424; /* sfondo dark-mode */
+    --text-color: #414142;
+    --text-light: #f2f2f2; /* testo per dark-mode */
+    --background-light : #ffffff;
+    --background-dark: #242424; /* sfondo per dark-mode */
+    --pink-color:#f687b3;
+    --blue-color: #007aff;
+    --gray-color: #8d8d95;
+ }
+
+ body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-color);
+
+ }
+
+
+ body.dark {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+ }
+
+ a {
+    text-decoration: none;
+    color: var(--text-color);
+
+ }
+
+ a:hover {
+    text-decoration-line: underline;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    line-height: 1.4;
+   
+ }
+
+ h1 {
+    font-size: 90px;
+    font-weight: bold;
+ }
+
+
+ h2 {
+    font-size: 55px;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+ }
+
+
+
+ .btn-primario {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+ }
+
+ .btn-primario:hover {
+    color: var(--primary-hover);
+ }
+
+ input, textarea {
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid var(--text-color);
+    background: var(--background-light);
+    color: var(--text-color);
+ }
+
+ body.dark input, body.dark textarea {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+ }
+
+ .container {
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+
+ section {
+    padding: 60px 0;
+ }
+
+
+ul {
+    list-style: none;
+    line-height: 1.4;
+}
+
+ 
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.theme-switch {
+    width: 55px;
+    height: 30px;
+    display: block;
+    position: relative;
+    background-color: var(--primary-color);
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.theme-switch:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 50%;
+    top: 2.5px;
+    left: 2.5px;
+    background-color: linear-gradient ( #ffcc89, #d8860b);
+}
+
+input:checked + .theme-switch {
+  background: var(--secondary-color);
+}
+
+input:checked + .theme-switch:after {
+  left: 30px;
+  background: linear-gradient( #777, #3a3a3a);
+}
