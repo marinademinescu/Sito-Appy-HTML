@@ -45,9 +45,9 @@
                     <input type="checkbox" id="dark-mode">
                     <label for="dark-mode" class="theme-switch"></label>
 
-                    <button class="btn btn-primario">Request code</button>
+                    <button class="btn btn-primary">Request code</button>
 
-                    <button class="hamburger" id="hamburger"><i class= 'bx bx-menu'></i></button>
+                    <button class="hamburger" id="hamburger"><i class='bx bx-menu'></i></button>
 
                 </div>
 
@@ -59,11 +59,11 @@
         <section class="container hero-wrapper">
             <div class="hero-left">
                 <h1>Your website, <br> reimagined</h1>
-                <p>Landing page template works on all devices.</p>
+                <p>Our landing page template works on all devices, so you only have <br> to set it up once, and get beautiful results forever.</p>
 
-                <form action="#"> 
-                    <input type="text" id="phone" name="phone"   placeholder="Phone number" required>
-                    <button class="btn btn-primario" type="submit">Request code</button>
+                <form action="#">
+                    <input type="text" id="phone" name="phone" placeholder="Phone number" required>
+                    <button class="btn btn-primary" type="submit">Request code</button>
                 </form>
 
                 <ul class="hero-ul">
@@ -75,10 +75,10 @@
 
             </div>
             <div class="hero-right">
-                <img src="/assets/immagini/glow-illustration/cover.jpg" alt="">
-                <img src="/assets/immagini/glow-illustration/mockup-image-01.jpg" alt="">
-                <video src="/assets-video/video-head.mp4" controls></video>
-                <button class="play-button">&#9658;</button>
+                <img src="/assets/immagini/glow-illustration/cover.jpg" alt="" class="hero-img1">
+                <img src="/assets/immagini/glow-illustration/mockup-image-01.jpg" alt="" class="hero-img2">
+                <video src="/assets-video/video-head.mp4" controls class="hero-video"></video>
+                 <div class="video-play-btn" id="play-btn">&#9658;</div>
             </div>
 
         </section>
@@ -113,27 +113,23 @@
                 excepteur sint occaecat cupidatat.</p>
         </div>
 
-        <div class="carousel-wrapper">
-            <div class="carousel-slide"><img src="/assets/immagini/img-carousell/OIP-1.carousell.jpg"><button
-                    class="btn btn-primary">Learn
-                    more</button></div>
-            <div class="carousel-slide"><img src="/assets/immagini/img-carousell/OIP-2.carousell.jpg"><button
-                    class="btn btn-primary">Learn
-                    more</button></div>
-            <div class="carousel-slide"><img src="/assets/immagini/img-carousell/OIP-3.carousell.jpg"><button
-                    class="btn btn-primary">Learn
-                    more</button></div>
-            <div class="carousel-slide"><img src="/assets/immagini/img-carousell/OIP.carousell.jpg"><button
-                    class="btn btn-primary">Learn
-                    more</button></div>
-        </div>
-
-        <div class="frecce-carousel">
-            <div class="frecce-button">
-                <button class="button-prev"><span><i class='bx bx-left-arrow-alt'></i></span> </button>
-                <button class="button-next"> <span><i class='bx bx-right-arrow-alt'></i></span></button>
-
+        < class="carousel-wrapper">
+            <img src="assets/immagini/img-carousell/OIP-1.carousell.jpg"><button class="btn btn-primary">Learn
+                more</button>
+            <img src="assets/immagini/img-carousell/OIP-2.carousell.jpg"><button class="btn btn-primary">Learn
+                more</button>
+            <img src="assets/immagini/img-carousell/OIP-3.carousell.jpg"><button class="btn btn-primary">Learn
+                more</button>
+            <img src="assets/immagini/img-carousell/OIP.carousell.jpg"><button class="btn btn-primary">Learn
+                more</button>
             </div>
+
+            <div class="frecce-carousel">
+                <div class="frecce-button">
+                    <button class="button-prev"><span><i class='bx bx-left-arrow-alt'></i></span> </button>
+                    <button class="button-next"> <span><i class='bx bx-right-arrow-alt'></i></span></button>
+
+                </div>
 
 
 
@@ -375,9 +371,9 @@
     </section>
 
     <footer class="container footer">
-        <div class="footer-link">
+        <div class="footer-top logo">
             <img src="/assets/immagini/img-logo/idOyeCj4_W_logos.png" alt="logo">
-            <div>
+            <div class="footer-links">
                 <h6>Products</h6>
                 <ul>
                     <li><a href="">Drag And Drop</a></li>
@@ -421,7 +417,7 @@
             </div>
 
         </div>
-        <div class="footer-icon">
+        <div class="footer-bottom">
             <div class="cruip">p© Cruip.com. All rights reserved.</div>
             <div>
                 <a href="">Terms</a>
@@ -430,11 +426,11 @@
 
             <div class="footer-icon">
                 <ul>
-                    <li><a href=""><i class = 'bx bxl-twitter'></i></a></li>
-                    <li><a href=""><i class = 'bx bxl-github'></i></a></li>
-                    <li><a href=""><i class = 'bx bxl-facebook'></i></a></li>
-                    <li><a href=""><i class = 'bx bxl-instagram'></i></a></li>
-                    <li><a href=""><i class = 'bx bxl-linkedin-square'></i></a></li>
+                    <li><a href=""><i class='bx bxl-twitter'></i></a></li>
+                    <li><a href=""><i class='bx bxl-github'></i></a></li>
+                    <li><a href=""><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href=""><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href=""><i class='bx bxl-linkedin-square'></i></a></li>
                 </ul>
             </div>
 
@@ -447,6 +443,6 @@
 
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </html>
