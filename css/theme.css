@@ -4,17 +4,14 @@
     --primary-color: #3abab4;
     --secondary-accent: #ffcc89;
     --primary-hover: #45a39e;
-    --secondary-color: #242424;
-    /* sfondo dark-mode */
+    --secondary-color: #242424; /* sfondo dark-mode */
     --text-color: #414142;
     --paragraf-color: #8d8d95;
-    --text-light: #f2f2f2;
-    /* testo per dark-mode */
+    --text-light: #f2f2f2;/* testo per dark-mode */
     --sfondo-principale: #ffffff;
     --sfondo-secondario: #f2f2f2;
     --background-light: #ffffff;
-    --background-dark: #242424;
-    /* sfondo per dark-mode */
+    --background-dark: #242424; /* sfondo per dark-mode */
     --pink-color: #f687b3;
     --blue-color: #007aff;
     --gray-color: #8d8d95;
@@ -26,8 +23,7 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
+  
     box-sizing: border-box;
 }
 

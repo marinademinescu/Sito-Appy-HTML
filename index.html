@@ -23,23 +23,27 @@
     <div class="page-wrapper container">
         <header class="wrapper-header container">
             <div class="container-head-wrapper">
-                <div class="logo">
-                    <img src="/assets/immagini/img-logo/idOyeCj4_W_logos.png" alt="">
+                <div class=" logo-menu">
+
+                    <div class="logo">
+                        <img src="/assets/immagini/img-logo/idOyeCj4_W_logos.png" alt="">
+                    </div>
+
+                    <nav class="menu-head-wrapper">
+                        <ul class="nav-ul-head">
+                            <li> <a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Resources &#9662; </a>
+                                <ul class="dropdown-head">
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">404</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
 
-                <nav class="menu-head-wrapper">
-                    <ul class="nav-ul-head">
-                        <li> <a href="">About</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Testimonials</a></li>
-                        <li><a href="">Resources &#9662; </a>
-                            <ul class="dropdown-head">
-                                <li><a href="">Help Center</a></li>
-                                <li><a href="">404</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
 
                 <div class="header-right">
                     <input type="checkbox" id="dark-mode">
@@ -47,11 +51,29 @@
 
                     <button class="btn btn-primary">Request code</button>
 
-                    <button class="hamburger" id="hamburger"><i class='bx bx-menu'></i></button>
+                    <button class="hamburger" id="hamburger" aria-label="open-menu" aria-expanded="false"
+                        aria-controls="primary-navigation"><i class='bx bx-menu'></i></button>
 
                 </div>
-
             </div>
+
+            <nav class="mobile-menu-wrapper" id="mobile-menu-wrapper">
+                <div class="logo">
+                    <img src="/assets/immagini/img-logo/idOyeCj4_W_logos.png" alt="">
+                </div>
+
+                <ul class="submenu-mobile">
+                    <li> <a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Resources </a>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">404</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
 
         </header>
 
@@ -59,7 +81,8 @@
         <section class="container hero-wrapper">
             <div class="hero-left">
                 <h1>Your website, <br> reimagined</h1>
-                <p>Our landing page template works on all devices, so you only have <br> to set it up once, and get beautiful results forever.</p>
+                <p>Our landing page template works on all devices, so you only have <br> to set it up once, and get
+                    beautiful results forever.</p>
 
                 <form action="#">
                     <input type="text" id="phone" name="phone" placeholder="Phone number" required>
@@ -76,9 +99,9 @@
             </div>
             <div class="hero-right">
                 <img src="/assets/immagini/glow-illustration/cover.jpg" alt="" class="hero-img1">
-                <img src="/assets/immagini/glow-illustration/mockup-image-01.jpg" alt="" class="hero-img2">
+                <img src="/assets/immagini/glow-illustration/mockup-image-01.jpg" alt="cover1" class="hero-img2">
                 <video src="/assets-video/video-head.mp4" controls class="hero-video"></video>
-                 <div class="video-play-btn" id="play-btn">&#9658;</div>
+                <div class="video-play-btn" id="play-btn">&#9658;</div>
             </div>
 
         </section>
@@ -113,7 +136,8 @@
                 excepteur sint occaecat cupidatat.</p>
         </div>
 
-        < class="carousel-wrapper">
+        <div class="carousel-wrapper">
+
             <img src="assets/immagini/img-carousell/OIP-1.carousell.jpg"><button class="btn btn-primary">Learn
                 more</button>
             <img src="assets/immagini/img-carousell/OIP-2.carousell.jpg"><button class="btn btn-primary">Learn
@@ -122,14 +146,20 @@
                 more</button>
             <img src="assets/immagini/img-carousell/OIP.carousell.jpg"><button class="btn btn-primary">Learn
                 more</button>
+        </div>
+
+        <div class="frecce-carousel">
+            <div class="frecce-button">
+                <button class=" btn button-prev"><span><i class='bx bx-left-arrow-alt'></i></span> </button>
+                <button class=" btn button-next"> <span><i class='bx bx-right-arrow-alt'></i></span></button>
+
             </div>
+        </div>
 
-            <div class="frecce-carousel">
-                <div class="frecce-button">
-                    <button class="button-prev"><span><i class='bx bx-left-arrow-alt'></i></span> </button>
-                    <button class="button-next"> <span><i class='bx bx-right-arrow-alt'></i></span></button>
 
-                </div>
+
+
+
 
 
 
@@ -188,15 +218,15 @@
         <div class="mockup-item">
             <div>
                 <span>1</span>
-                <img src="/assets/immagini/img-mokup/mockup-image-02.jpg" alt="">
+                <img src="/assets/immagini/img-mokup/mockup-image-02.jpg" alt="im1">
             </div>
             <div>
                 <span>2</span>
-                <img src="/assets/immagini/img-mokup/mockup-image-03.jpg" alt="">
+                <img src="/assets/immagini/img-mokup/mockup-image-03.jpg" alt="im2">
             </div>
             <div>
                 <span>3</span>
-                <img src="/assets/immagini/img-mokup/mockup-image-04.jpg" alt="">
+                <img src="/assets/immagini/img-mokup/mockup-image-04.jpg" alt="im3">
             </div>
         </div>
     </section>
@@ -243,7 +273,7 @@
                         </div>
                     </div>
                     <div>
-                        <button><a href=""><span>Go Premiums</span></a></button>
+                        <button class="btn btn-primary">Go Premium</button>
                     </div>
 
                 </div>
@@ -263,7 +293,7 @@
                         </div>
                     </div>
                     <div>
-                        <button><a href=""><span>Go Premiums</span></a></button>
+                        <button class="btn btn-primary">Go Premiums</button>
                     </div>
 
                 </div>
@@ -283,7 +313,7 @@
                         </div>
                     </div>
                     <div>
-                        <button><a href=""><span>Go Premiums</span></a></button>
+                        <button class="btn btn-primary">Go Premiums</button>
                     </div>
 
                 </div>
@@ -364,7 +394,7 @@
         <h3>Free until you're ready <br> to launch</h3>
         <div>
             <input id="box-input" type="text" placeholder="Phone number ">
-            <button>Request code</button>
+            <button class="btn btn-primary">Request code</button>
         </div>
 
 
@@ -439,10 +469,8 @@
 
     </footer>
 
+    <script src="script.js"></script>
+
 </body>
-
-
-
-<script src="script.js"></script>
 
 </html>

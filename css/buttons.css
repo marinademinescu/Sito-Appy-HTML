@@ -35,10 +35,11 @@
 }
 
 
+.hamburger {
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  display: inline-flex;
+  align-items: center;
+}
 
-.btn[disabled], button[disabled] {
-  opacity: 0.5;
-  cursor: not-allowed;
-  transform: none;
-  box-shadow: none;
-} 

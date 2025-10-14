@@ -10,6 +10,51 @@
     max-width: var(--max-width);
 }
 
+
+.logo-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+#mobile-menu-wrapper {
+    position: fixed;
+    top: 2px;
+    left: 2px;
+    width: 250px;
+    height: auto;
+    background: var(--background-light);
+    padding: 20px 10px;
+    z-index: 1000;
+}
+
+.mobile-menu-wrapper  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mobile-menu-wrapper  ul:hover{
+    color: var(--text-color);
+
+}
+
+
+
+.mobile-menu-wrapper .logo {
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+
+.mobile-menu-wrapper ul li ul li a{
+    margin-left: 0;
+    margin-top: 4px;
+}
+
+
+
+
 .container-head-wrapper {
     display: flex;
     height: 100%;
@@ -33,7 +78,7 @@
     padding: 0;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 35px;
 
 }
 
@@ -138,74 +183,70 @@ label:after:active {
 
 
 .hero-right {
-  position: relative;
-  width: 100%;
-  max-width: 800px; 
-  height: auto; 
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
 }
 
 .hero-right {
-  position: relative;
-  width: 100%;
-  height: auto;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 /* immagine di sfondo */
 .hero-img1 {
-  width: 100%;
-  border-radius: 30px;
-  display: block;
-  position: absolute;
-  z-index: 1;
+    width: 100%;
+    border-radius: 30px;
+    display: block;
+    position: absolute;
+    z-index: 1;
 }
 
 /* wrapper per immagine + video */
 .hero-img2-wrapper {
-  position: absolute;
-  top: 24%;
-  left: 65px;
-  width: 23%;
-  height: 40%;
-  border-radius: 12px;
-  overflow: hidden;
-  z-index: 2;
+    position: absolute;
+    top: 24%;
+    left: 65px;
+    width: 23%;
+    height: 40%;
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 2;
 }
 
 /* immagine placeholder */
 .hero-img2 {
-  width: 60%;
-  height: 70%;
-  margin-left: 90px;
-  border-radius: 12px;
-  display: block;
+    width: 60%;
+    height: 70%;
+    margin-left: 90px;
+    border-radius: 12px;
+    display: block;
 }
 
 /* video nascosto inizialmente */
 .hero-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  border-radius: 12px;
-  z-index: 3; /* sopra immagine */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 12px;
+    z-index: 3;
 }
 
 /* pulsante play */
 .video-play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  color: white;
-  cursor: pointer;
-  z-index: 4; /* sopra tutto */
-  opacity: 0.8;
-  transition: opacity 0.3s;
-}
-
-.video-play-btn:hover {
-  opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    z-index: 4;
+    opacity: 0.8;
+    transition: opacity 0.3s;
 }
