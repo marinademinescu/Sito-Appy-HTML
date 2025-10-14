@@ -5,16 +5,16 @@ toggle.addEventListener('change', () => {
 })
 
 
-
+// video play
 const video = document.querySelector('.hero-video')
 
 video.addEventListener('click', () => {
   if (video.classList.contains('active')) {
-  video.classList.add('active')
+    video.classList.add('active')
     video.play()
   } else {
 
-     video.pause()
+    video.pause()
     video.currentTime = 0
     video.classList.remove('active')
   }
@@ -29,9 +29,9 @@ const mobileNav = document.getElementById("mobile-menu-wrapper")
 
 hamburger.addEventListener("click", () => {
   mobileNav.classList.toggle("open")
-  hamburger.classList.toggle("is-active")      // per trasformare l'icona in X
- hamburger.innerHTML= hamburger.classList.contains("is-active")
-  ? "<i class='bx bx-x'></i>" 
+  hamburger.classList.toggle("is-active")
+  hamburger.innerHTML = hamburger.classList.contains("is-active")
+    ? "<i class='bx bx-x'></i>"
     : "<i class='bx bx-menu'></i>"
 })
 
@@ -48,4 +48,37 @@ mobileDropdownLinks.forEach(link => {
   })
 })
 
+// Carousel slide
+const track = document.querySelector('.carousel-wrapper');
+const slides = Array.from(track.children);
+const prevBtn = document.querySelector('.button-prev');
+const nextBtn = document.querySelector('.button-next');
 
+let current = 0;
+
+function updateCarousel() {
+  slides.forEach((slide, i) => slide.classList.remove('active'));
+  
+  slides[current].classList.add('active');
+
+  // calcola l'offset per centrare la slide attiva
+  const slideWidth = slides[0].getBoundingClientRect().width + 20; // + gap
+  const viewportWidth = track.parentElement.offsetWidth;
+  const offset = -current * slideWidth + (viewportWidth / 2 - slideWidth / 2);
+
+  track.style.transform = `translateX(${offset}px)`;
+}
+
+// loop infinito
+prevBtn.addEventListener('click', () => {
+  current = (current === 0) ? slides.length - 1 : current - 1;
+  updateCarousel();
+});
+
+nextBtn.addEventListener('click', () => {
+  current = (current === slides.length - 1) ? 0 : current + 1;
+  updateCarousel();
+});
+
+// inizializza
+updateCarousel();
