@@ -4,28 +4,38 @@
     --primary-color: #3abab4;
     --secondary-accent: #ffcc89;
     --primary-hover: #45a39e;
-    --secondary-color: #242424; /* sfondo dark-mode */
+    --secondary-color: #242424;
+    /* sfondo dark-mode */
     --text-color: #414142;
     --paragraf-color: #8d8d95;
-    --text-light: #f2f2f2;/* testo per dark-mode */
+    --text-light: #f2f2f2;
+    /* testo per dark-mode */
     --sfondo-principale: #ffffff;
     --sfondo-secondario: #f2f2f2;
     --background-light: #ffffff;
-    --background-dark: #242424; /* sfondo per dark-mode */
+    --background-dark: #242424;
+    /* sfondo per dark-mode */
     --pink-color: #f687b3;
     --blue-color: #007aff;
     --gray-color: #8d8d95;
     --max-width: 1200px;
-    --gap: 16px;
+    --gap: 20px;
+    --border-radius: 4px;
 
 }
 
 
 
 * {
-  
+
     box-sizing: border-box;
 }
+
+
+.page-wrapper {
+    padding-right: 400px;
+}
+
 
 body {
     font-family: 'Inter', sans-serif;
@@ -70,7 +80,8 @@ h6 {
 h1 {
     font-size: 90px;
     font-weight: bold;
-    
+    white-space: nowrap;
+
 }
 
 
@@ -81,14 +92,21 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    font-size: 40px;
+    white-space: nowrap;
+}
 
+p {
+    font-size: 20px;
+}
 
 
 input,
 textarea {
     font-family: 'Inter', sans-serif;
-    padding: 10px;
-    border-radius: 2px;
+    padding: 15px 40px;
+    border-radius: var(--border-radius);
     border: 1px solid var(--text-color);
     background: var(--background-light);
     color: var(--text-color);
@@ -107,7 +125,7 @@ body.dark-mode li a:hover {
 .container {
     max-width: 1200px;
     margin: 20px auto;
-    padding: 0 20px;
+    padding: 0 25px;
 }
 
 section {
@@ -117,12 +135,13 @@ section {
 
 ul {
     list-style: none;
-    line-height: 1.4;
+    line-height: 2;
 }
 
 
 .hero-ul {
     padding-left: 0;
+    margin-top: 20px;
 }
 
 .hero-ul li::before {
@@ -160,6 +179,6 @@ input:checked+.theme-switch {
 }
 
 input:checked+.theme-switch:after {
-    left: 30px;
+    left: 0;
     background: var(--secondary-accent);
 }

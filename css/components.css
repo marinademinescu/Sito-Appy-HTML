@@ -1,0 +1,32 @@
+.card {
+    background: var(--background-light);
+    box-shadow:  0 4px 8px rgb(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.stat-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap);
+    margin-top: 60px;
+}
+
+.stat-item {
+   
+    text-align: center;
+    padding: 4px;
+}
+
+
+.stat-item h3 {
+    font-size: 40px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+
+.stat-item p {
+    font-size: 15px;
+    margin-top: 0;
+    padding-bottom: 15px;
+}

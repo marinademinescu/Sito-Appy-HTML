@@ -29,13 +29,13 @@
     z-index: 1000;
 }
 
-.mobile-menu-wrapper  ul {
+.mobile-menu-wrapper ul {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.mobile-menu-wrapper  ul:hover{
+.mobile-menu-wrapper ul:hover {
     color: var(--text-color);
 
 }
@@ -47,7 +47,7 @@
     margin-left: 0;
 }
 
-.mobile-menu-wrapper ul li ul li a{
+.mobile-menu-wrapper ul li ul li a {
     margin-left: 0;
     margin-top: 4px;
 }
@@ -129,7 +129,7 @@
 
 
 label {
-    width: 60px;
+    width: 70px;
     height: 30px;
     position: relative;
     display: block;
@@ -137,6 +137,26 @@ label {
     border-radius: 50px;
     cursor: pointer;
 
+}
+
+
+input::placeholder {
+    font-size: 16px;
+    text-align: left;
+
+}
+
+.hero-left {
+    margin-top: 35px;
+
+}
+
+.hero-left h1 {
+    margin-bottom: 10px;
+}
+
+.hero-left p {
+    white-space: nowrap;
 }
 
 
@@ -162,7 +182,7 @@ input:checked+label {
 input:checked+label:after {
     left: 58px;
     transform: translateX(-100%);
-    background: linear-gradient(180deg, #777, #3a3a3a);
+    background: linear-gradient (#777, #3a3a3a);
 }
 
 label:after:active {
@@ -189,43 +209,17 @@ label:after:active {
     height: auto;
 }
 
-.hero-right {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
 
-/* immagine di sfondo */
-.hero-img1 {
-    width: 100%;
-    border-radius: 30px;
-    display: block;
-    position: absolute;
-    z-index: 1;
-}
 
-/* wrapper per immagine + video */
-.hero-img2-wrapper {
-    position: absolute;
-    top: 24%;
-    left: 65px;
-    width: 23%;
-    height: 40%;
-    border-radius: 12px;
-    overflow: hidden;
-    z-index: 2;
-}
-
-/* immagine placeholder */
 .hero-img2 {
-    width: 60%;
+    width: 70%;
     height: 70%;
-    margin-left: 90px;
+    margin-left: 140px;
+    margin-top: 60px;
     border-radius: 12px;
     display: block;
 }
 
-/* video nascosto inizialmente */
 .hero-video {
     position: absolute;
     top: 0;
@@ -237,16 +231,65 @@ label:after:active {
     z-index: 3;
 }
 
-/* pulsante play */
+
 .video-play-btn {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 68%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
     color: white;
     cursor: pointer;
     z-index: 4;
-    opacity: 0.8;
-    transition: opacity 0.3s;
+}
+
+
+.frecce-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+
+.frecce-button button {
+    border: none;
+    border-radius: none;
+
+}
+
+
+.frecce-button button i {
+    font-size: 28px;
+    color: var(--text-light);
+
+}
+
+
+
+.stat-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap);
+    margin-top: 60px;
+}
+
+.stat-item {
+   
+    text-align: center;
+    padding: 4px;
+}
+
+
+.stat-item h3 {
+    font-size: 40px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+
+.stat-item p {
+    font-size: 15px;
+    margin-top: 0;
+    padding-bottom: 15px;
 }

@@ -11,10 +11,11 @@
     border-radius: var(--btn-radius);
     font-size: 16px;
     cursor: pointer;
+     background-color: var(--primary-color);
+
 }
 
  .btn-primary {
-    background-color: var(--primary-color);
     color: #fff;
     border: none;
     border-radius: var(--btn-radius);
@@ -33,6 +34,13 @@
   color: #242424;
   
 }
+
+.btn-input {
+   padding: 15px 25px;
+}
+
+
+
 
 
 .hamburger {
