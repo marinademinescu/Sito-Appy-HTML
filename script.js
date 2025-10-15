@@ -82,3 +82,20 @@ nextBtn.addEventListener('click', () => {
 
 // inizializza
 updateCarousel();
+
+
+
+// Video section
+const buttons = document.querySelectorAll('.btn-video');
+const sections = document.querySelectorAll('.video-body');
+
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Rimuovi classe active da tutti i bottoni
+        buttons.forEach(btn => btn.classList.remove('active'))
+        // Aggiungi active al bottone cliccato
+        button.classList.add('active')
+       
+    })
+})

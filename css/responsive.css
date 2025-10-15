@@ -72,7 +72,53 @@
     }
 
 
+    .video-list {
+        grid-template-columns: 1fr;
+        flex-wrap: wrap;
+    }
+
+    .mockup-item {
+        gap: 12px;
+    }
+
+    .mockup-item>div {
+        width: calc(50% - 12px);
+        min-width: 260px;
+    }
+
+    .mockup-item>div span {
+        top: 8px;
+        left: 14px;
+        width: 34px;
+        height: 34px;
+        font-size: 14px;
+    }
+
+    .video-body {
+        gap: 24px;
+        padding-top: 18px;
+    }
+
+    .video-filter {
+        min-width: 180px;
+        max-width: 220px;
+    }
+
+    .video-list {
+        gap: 18px;
+    }
+
+    .video-play>div:first-child {
+        height: 160px;
+    }
 }
+
+
+
+
+
+
+
 
 
 
@@ -89,6 +135,69 @@
     }
 
 
+    .btn-video {
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+
+    .mockup-item {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .mockup-item>div {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .mockup-item img {
+        border-radius: 12px;
+    }
+
+    .mockup-item>div span {
+        top: 8px;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+
+    .video-body {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .video-filter {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+        min-width: 0;
+        max-width: none;
+    }
+
+    .video-filter>button.btn-video {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .video-list {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .video-play {
+        min-height: auto;
+    }
+
+    .video-play>div:first-child {
+        height: 160px;
+    }
 
 }
 
@@ -112,8 +221,6 @@
 
 
 
-
-
     #mobile-menu-wrapper {
         left: 0;
         top: 0;
@@ -121,6 +228,26 @@
         height: 100vh;
         padding: 32px 20px;
         overflow-y: auto;
+    }
+
+
+    .btn-video {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .video-filter>button.btn-video {
+        font-size: 13px;
+        padding: 8px;
+        gap: 6px;
+    }
+
+    .video-play>div:first-child {
+        height: 140px;
+    }
+
+    .video-play>div:nth-child(2) {
+        padding: 12px;
     }
 
 
