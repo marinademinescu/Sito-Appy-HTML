@@ -56,6 +56,9 @@
    color: var(--text-light);
 }
 
+.btn-video.active .bx {
+   color: var(--text-light);
+}
 
 
 .hamburger {
@@ -66,3 +69,6 @@
   align-items: center;
 }
 
+.Go {
+   padding: 10px 20px;
+}

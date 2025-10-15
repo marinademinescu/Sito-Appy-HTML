@@ -69,6 +69,11 @@ function updateCarousel() {
   track.style.transform = `translateX(${offset}px)`;
 }
 
+
+window.addEventListener('resize', updateCarousel);
+updateCarousel();
+
+
 // loop infinito
 prevBtn.addEventListener('click', () => {
   current = (current === 0) ? slides.length - 1 : current - 1;
@@ -99,3 +104,5 @@ buttons.forEach(button => {
        
     })
 })
+
+

@@ -308,6 +308,8 @@ label:after:active {
 
 .carousel-wrapper {
     display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
 }
 
 
@@ -316,7 +318,7 @@ label:after:active {
     /* 3 slide visibili sullo schermo */
     position: relative;
     opacity: 0.6;
-    transition: opacity 0.4s ease;
+   
 }
 
 
@@ -458,4 +460,120 @@ label:after:active {
     height: 50px;
     margin-left: 120px;
     color: var(--text-light);
+}
+
+.full {
+    background-color: var(--background-dark);
+    margin: 0;
+    padding: 0;
+}
+
+.start-header {
+    padding-top: 20px;
+}
+
+.start-header h2 p {
+    color: var(--text-light);
+}
+
+.start-body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 70px;
+    margin-bottom: 40px;
+}
+
+.start-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin-top: 60px;
+    margin: 0;
+}
+
+
+
+.start-slide {
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+}
+
+.start-slide>div>div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.start-slide .start-y {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.start-slide>div>div:first-child div:nth-child(2) {
+    font-size: 12px;
+    color: rgb(58 186 180);
+    background-color: rgb(58, 186, 180, 0.4);
+    border-radius: 45%;
+    width: 45px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.start-list ul li span {
+    display: inline;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    color: var(--paragraf-color);
+    padding-left: 0px;
+    white-space: nowrap;
+
+}
+
+.start-list ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.start-list ul li::before {
+    content: "✓";
+    color: rgb(58 186 180);
+    display: inline-block;
+    line-height: 1;
+    margin-right: 10px;
+}
+
+.start-list div {
+    font-size: 20px;
+}
+
+.start-slide>div>div:nth-child(2)>span:nth-child(2) {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.start-slide>div>div:nth-child(2)>span:first-child {
+    font-size: 24px;
+    color: var(--paragraf-color);
+}
+
+.start-slide>div>div:nth-child(3)>div {
+    font-size: 18px;
+    color: var(--paragraf-color);
+    padding-top: 10px;
+}
+
+.start-slide>div:last-child {
+    display: flex;
+    justify-content: center;
 }
