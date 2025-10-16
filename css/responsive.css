@@ -420,322 +420,409 @@
         font-size: 1rem;
 
     }
+
+    .frecce-button {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 30px;
+
+    }
+
+    .frecce-button button {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .frecce-button button i {
+        font-size: 24px;
+    }
 }
 
 
-    @media (max-width: 600px) {
+@media (max-width: 600px) {
 
 
 
-        .video-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            align-items: center;
+    .video-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
 
-        }
+    }
 
-        .video-play {
-            margin-bottom: 30px;
-            align-items: center;
+    .video-play {
+        margin-bottom: 30px;
+        align-items: center;
 
-        }
+    }
 
-        .carousel-slide {
-            width: 100%;
-        }
-
-
-        p {
-            font-size: 18px;
-        }
-
-        .hero-img2 {
-            width: 60%;
-            height: 40%;
-
-        }
-
-        .btn {
-            font-size: 12px;
-            padding: 8px 10px;
-        }
-
-        .btn-primary {
-            padding: 10px 10px;
-        }
-
-        .btn-input {
-            padding: 12px 10px;
-        }
-
-        .btn-video {
-            padding: 6px 30px;
-        }
-
-        .slide-btn {
-            padding: 8px 14px;
-            font-size: 14px;
-        }
-
-
-        .stat-wrapper {
-            padding-left: 15px;
-            padding-right: 15px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            margin-bottom: 20px;
-
-        }
-
-
-        .hero-img2 {
-            display: block;
-            margin: 0 auto;
-            width: 70%;
-            height: auto;
-            position: relative;
-        }
-
-        .video-play-btn {
-            position: absolute;
-            top: 270px;
-            left: 200px;
-            font-size: 1rem;
-
-        }
+    .carousel-slide {
+        width: 100%;
     }
 
 
-        @media (max-width: 480px) {
+    p {
+        font-size: 18px;
+    }
+
+    .hero-img2 {
+        width: 60%;
+        height: 40%;
+
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .btn-primary {
+        padding: 10px 10px;
+    }
+
+    .btn-input {
+        padding: 12px 10px;
+    }
+
+    .btn-video {
+        padding: 6px 30px;
+    }
+
+    .slide-btn {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
 
 
-            h2 {
-                font-size: 20px;
-                text-align: center;
+    .stat-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 20px;
 
-            }
-
-
-            p {
-                text-align: center;
-                font-size: 16px;
-            }
+    }
 
 
-            .btn {
-                padding: 10px 18px;
-                width: 100%;
-                box-sizing: border-box;
-            }
+    .hero-img2 {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        height: auto;
+        position: relative;
+    }
 
+    .video-play-btn {
+        position: absolute;
+        top: 270px;
+        left: 200px;
+        font-size: 1rem;
 
-            /* mobile menu*/
-            #mobile-menu-wrapper {
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100vh;
-                padding: 32px 20px;
-                overflow-y: auto;
-            }
+    }
 
+    .frecce-button {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 30px;
 
-            .btn-video {
-                font-size: 14px;
-                padding: 10px 14px;
-            }
+    }
 
-            .video-filter>button.btn-video {
-                font-size: 13px;
-                padding: 8px;
-                gap: 6px;
-            }
+    .frecce-button button {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
 
-            .video-play>div:first-child {
-                height: 140px;
-            }
+    .frecce-button button i {
+        font-size: 24px;
+    }
 
-            .video-play>div:nth-child(2) {
-                padding: 12px;
-            }
-
-            .carousel-slide {
-                width: 100%;
-            }
-
-            .frecce-button button {
-                padding: 3px 2px;
-                font-size: 10px;
-
-            }
-
-            /* bottoni*/
-            .btn-primary {
-                padding: 10px 30px;
-            }
-
-            .btn-input {
-                padding: 10px 20px;
-                font-size: 14px;
-            }
-
-
-            .slide-btn {
-                padding: 8px 14px;
-                font-size: 13px;
-            }
-
-
-            .theme-switch {
-                display: flex;
-                width: 35px;
-                position: absolute;
-                z-index: 1;
-                margin-left: -12px;
-            }
-
-            .clarity-card {
-                grid-template-columns: repeat(1, 1fr);
-                gap: 12px;
-                padding: 10px 0;
-            }
-
-            .video-filter>button.btn-video {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            .video-list {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-
-            }
-
-            .video-play {
-                margin-bottom: 30px;
-                align-items: center;
-
-            }
-
-            input,
-            textarea {
-                padding: 10px 15px;
-                font-size: 0.9rem;
-                margin-bottom: 10px;
-            }
-
-            /*footer*/
-            .footer {
-                padding: 8px 2px;
-            }
-
-            .footer-top {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: flex-start;
-                justify-content: center;
-                gap: 2px;
-            }
-
-
-            .footer-img.logo {
-                order: 0;
-                flex: 1 1 100%;
-                text-align: center;
-                margin-bottom: 2px;
-            }
-
-            .footer-links h6 {
-                font-size: 16px;
-
-            }
-
-            .footer-links ul {
-                margin: 0;
-                padding: 0;
-                list-style: none;
-            }
-
-            .footer-links a {
-                font-size: 14px;
-            }
-
-
-            .footer-links {
-                order: 1;
-                flex: 2 1 50%;
-                padding: 2px 6px;
-                text-align: left;
-            }
-
-            .footer-icon a {
-                width: 34px;
-                height: 34px;
-            }
+    .frecce-button button {
+        width: 55px;
+        height: 55px;
+        font-size: 20px;
+    }
 
 
 
-            .footer-bottom {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
+    .carousel-slide {
+        flex: 0 0 100%;
+        /* 1 slide visibili sullo schermo */
+        position: relative;
+        opacity: 0.6;
+
+    }
+}
 
 
-            .hero-img2 {
-                display: block;
-                margin: 0 auto;
-                width: 70%;
-                height: auto;
-                position: relative;
-            }
-
-            .video-play-btn {
-                position: absolute;
-                top: 270px;
-                left: 200px;
-                font-size: 1rem;
-
-            }
-
-            .btn {
-                font-size: 14px;
-                padding: 6px 8px;
-            }
-
-            .btn-primary {
-                padding: 10px 30px;
-            }
-
-            .btn-input {
-                padding: 8px 18px;
-            }
-
-            .btn-video {
-                padding: 10px 14px;
-            }
-
-            .slide-btn {
-                padding: 8px 14px;
-                font-size: 14px;
-            }
+@media (max-width: 480px) {
 
 
-            .stat-wrapper {
-                padding-left: 15px;
-                padding-right: 15px;
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                margin-bottom: 20px;
+    h2 {
+        font-size: 20px;
+        text-align: center;
 
-            }
+    }
 
-            .hero-left h1 {
-                font-size: 60px;
-            }
 
-            .hero-left p {
-                font-size: 16px;
-            }
+    p {
+        text-align: center;
+        font-size: 16px;
+    }
 
-        }
+
+    .btn {
+        padding: 10px 18px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* mobile menu*/
+    #mobile-menu-wrapper {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 32px 20px;
+        overflow-y: auto;
+    }
+
+
+    .btn-video {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    .video-filter>button.btn-video {
+        font-size: 13px;
+        padding: 8px;
+        gap: 6px;
+    }
+
+    .video-play>div:first-child {
+        height: 140px;
+    }
+
+    .video-play>div:nth-child(2) {
+        padding: 12px;
+    }
+
+    .carousel-slide {
+        width: 100%;
+    }
+
+    .frecce-button button {
+        padding: 3px 2px;
+        font-size: 10px;
+
+    }
+
+    /* bottoni*/
+    .btn-primary {
+        padding: 10px 30px;
+    }
+
+    .btn-input {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+
+    .slide-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+
+    .theme-switch {
+        display: flex;
+        width: 35px;
+        position: absolute;
+        z-index: 1;
+        margin-left: -12px;
+    }
+
+    .clarity-card {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+        padding: 10px 0;
+    }
+
+    .video-filter>button.btn-video {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .video-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .video-play {
+        margin-bottom: 30px;
+        align-items: center;
+
+    }
+
+    input,
+    textarea {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    /*footer*/
+    .footer {
+        padding: 8px 2px;
+    }
+
+    .footer-top {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2px;
+    }
+
+
+    .footer-img.logo {
+        order: 0;
+        flex: 1 1 100%;
+        text-align: center;
+        margin-bottom: 2px;
+    }
+
+    .footer-links h6 {
+        font-size: 16px;
+
+    }
+
+    .footer-links ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+
+
+    .footer-links {
+        order: 1;
+        flex: 2 1 50%;
+        padding: 2px 6px;
+        text-align: left;
+    }
+
+    .footer-icon a {
+        width: 34px;
+        height: 34px;
+    }
+
+
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .hero-img2 {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        height: auto;
+        position: relative;
+    }
+
+    .video-play-btn {
+        position: absolute;
+        top: 270px;
+        left: 200px;
+        font-size: 1rem;
+
+    }
+
+    /* button */
+    .btn {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .btn-primary {
+        padding: 14px 16px;
+        display: inline-block;
+        width: 30%;
+
+    }
+
+    .btn-input {
+        padding: 8px 18px;
+    }
+
+    .btn-video {
+        padding: 10px 14px;
+    }
+
+    .slide-btn {
+        padding: 4px 6px;
+        font-size: 14px;
+    }
+
+    .frecce-button {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 30px;
+
+    }
+
+    .frecce-button button {
+        width: 55px;
+        height: 55px;
+        font-size: 20px;
+    }
+
+    .frecce-button button i {
+        font-size: 24px;
+    }
+
+    .stat-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 20px;
+
+    }
+
+    .hero-left h1 {
+        font-size: 60px;
+    }
+
+    .hero-left p {
+        font-size: 16px;
+    }
+
+
+
+
+    .carousel-slide {
+        flex: 0 0 100%;
+        /* 1 slide visibili sullo schermo */
+        position: relative;
+        opacity: 0.6;
+
+    }
+
+}
