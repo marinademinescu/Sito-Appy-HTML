@@ -503,7 +503,7 @@ label:after:active {
 
 .start-slide {
     width: 90%;
-    height: 50vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -723,12 +723,18 @@ label:after:active {
     color: var(--paragraf-color);
 }
 
+
+.footer{
+    margin-bottom: 30px;
+}
+
 .footer-top {
     display: grid;
     grid-template-columns: 2fr repeat(4, 1fr);
     gap: 15px;
     align-items: start;
     padding: 0 10px;
+    margin-bottom: 20px;
 }
 
 .footer-img.logo {
@@ -764,7 +770,24 @@ label:after:active {
 }
 
 .footer-icon ul a {
-    font-size: 30px;
-    color: var(--primary-color);
-    cursor: pointer;
+    font-size: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: var(--text-light);
+    padding: 5px 5px;
+    
+}
+
+.footer-icon ul a:hover{
+    background: var(--primary-hover);
+}
+
+.cruip {
+    font-size: 14px;
+}
+
+.footer-bottom>div:nth-child(2)  {
+       font-size: 14px;
+       display: flex;
+       gap: 6px;
 }
