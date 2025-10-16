@@ -24,8 +24,8 @@
     --max-width: 1200px;
     --gap: 20px;
     --border-radius: 4px;
-     --max-width: 1200px;
-     --gap-2: 40px;
+    --max-width: 1200px;
+    --gap-2: 40px;
 
 }
 
@@ -54,18 +54,17 @@ body.dark-mode {
 }
 
 body.dark-mode .card {
-     background-color: var(--background-opacity);
+    background-color: var(--background-opacity);
 }
 
-body.dark-mode  .video-filter > button.btn-video {
-      background-color: var(--background-opacity)
-
+body.dark-mode .video-filter>button.btn-video {
+    background-color: var(--background-opacity)
 }
 
 
 
 body.dark-mode .card h3,
- body.dark-mode .card p {
+body.dark-mode .card p {
     background-color: var(--background-opacity);
 }
 
@@ -96,13 +95,14 @@ h1,
 h2,
 h3,
 h4,
-h5 { 
+h5 {
     color: var(--text-color);
     line-height: 1.1;
     margin-bottom: 0;
     margin-top: 80px;
 
 }
+
 h6 {
     color: var(--text-color);
 }
@@ -128,9 +128,13 @@ h3 {
 }
 
 p {
+    max-width: 100%;
+    margin: 0 auto 16px auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
     font-size: 20px;
     text-align: center;
-    white-space: nowrap;
+    white-space: normal;
     color: var(--paragraf-color);
     padding-bottom: 30px;
 
@@ -168,7 +172,7 @@ body.dark-mode li a:hover {
 
 section {
     padding: 60px 0;
-   
+
 }
 
 
@@ -215,18 +219,18 @@ label.theme-switch::after {
     left: 22px;
     background-color: #ffffff;
     z-index: 2;
-     pointer-events: none;
-      
+    pointer-events: none;
+
 
 }
 
 input:checked+.theme-switch {
     background: var(--primary-color);
-   
+
 }
 
 input:checked+.theme-switch:after {
     left: 24px;
     background: var(--secondary-accent);
- 
+
 }
