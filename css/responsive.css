@@ -41,6 +41,15 @@
     }
 
 
+    .stat-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 20px;
+
+    }
+
 
 }
 
@@ -140,6 +149,62 @@
     }
 
 
+    .btn {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    .btn-primary {
+        padding: 10px 65px;
+    }
+
+    .btn-input {
+        padding: 15px 25px;
+    }
+
+    .btn-video {
+        padding: 10px 50px;
+    }
+
+    .slide-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+
+
+    .hero-img2 {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        height: auto;
+        position: relative;
+    }
+
+    .video-play-btn {
+        position: absolute;
+        top: 290px;
+        left: 220px;
+        font-size: 1rem;
+    }
+
+    .stat-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 10px;
+
+    }
+
+    .stat-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 20px;
+
+    }
 
 
 
@@ -276,29 +341,32 @@
 
     .btn {
         font-size: 14px;
-        padding: 7px 12px;
+        padding: 8px 12px;
     }
 
     .btn-primary {
-        padding: 8px 16px;
+        padding: 8px 55px;
     }
 
     .btn-input {
-        padding: 8px 16px;
+        padding: 12px 22px;
     }
 
     .btn-video {
-        padding: 6px 50px;
+        padding: 8px 10px;
     }
 
     .slide-btn {
-        padding: 8px 16px;
+        padding: 6px 14px;
         font-size: 14px;
     }
 
     .stat-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 20px;
 
     }
 
@@ -329,7 +397,7 @@
         margin-right: 300px;
 
     }
-    
+
     .hero-img2 {
         width: 80%px;
         height: 65%;
@@ -337,241 +405,337 @@
     }
 
 
-
-
-
-}
-
-
-@media (max-width: 600px) {
-
-
-
-    .video-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-
-    }
-
-    .video-play {
-        margin-bottom: 30px;
-        align-items: center;
-
-    }
-
-    .carousel-slide {
-        width: 100%;
-    }
-
-
-    p {
-        font-size: 18px;
-    }
-
     .hero-img2 {
-        width: 60%;
-        height: 40%;
-      
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        height: auto;
+        position: relative;
     }
 
-
-}
-
-
-@media (max-width: 480px) {
-
-
-
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 20px;
-        text-align: center;
-
-    }
-
-
-    p {
-        text-align: center;
-        font-size: 16px;
-    }
-
-
-    .btn {
-        padding: 10px 18px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-
-
-    #mobile-menu-wrapper {
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100vh;
-        padding: 32px 20px;
-        overflow-y: auto;
-    }
-
-
-    .btn-video {
-        font-size: 14px;
-        padding: 10px 14px;
-    }
-
-    .video-filter>button.btn-video {
-        font-size: 13px;
-        padding: 8px;
-        gap: 6px;
-    }
-
-    .video-play>div:first-child {
-        height: 140px;
-    }
-
-    .video-play>div:nth-child(2) {
-        padding: 12px;
-    }
-
-    .carousel-slide {
-        width: 100%;
-    }
-
-    .frecce-button button {
-        padding: 3px 2px;
-        font-size: 10px;
-
-    }
-
-    .btn {
-        font-size: 13px;
-        padding: 6px 10px;
-    }
-
-    .btn-primary {
-        padding: 6px 8px;
-    }
-
-    .btn-input {
-        padding: 6px 6px;
-        font-size: 14px;
-    }
-
-
-
-
-
-    .slide-btn {
-        padding: 6px 8px;
-        font-size: 13px;
-    }
-
-
-    .theme-switch {
-        display: flex;
-        width: 35px;
+    .video-play-btn {
         position: absolute;
-        z-index: 1;
-        margin-left: -12px;
-    }
-
-    .clarity-card {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 12px;
-        padding: 10px 0;
-    }
-
-    .video-filter>button.btn-video {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .video-list {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        top: 290px;
+        left: 220px;
+        font-size: 1rem;
 
     }
-
-    .video-play {
-        margin-bottom: 30px;
-        align-items: center;
-
-    }
-
-    input,
-    textarea {
-        padding: 10px 15px;
-        font-size: 0.9rem;
-        margin-bottom: 10px;
-    }
-
-    .footer {
-        padding: 8px 2px;
-    }
-
-    .footer-top {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 2px;
-    }
-
-
-    .footer-img.logo {
-        order: 0;
-        flex: 1 1 100%;
-        text-align: center;
-        margin-bottom: 2px;
-    }
-
-    .footer-links h6 {
-        font-size: 16px;
-
-    }
-
-    .footer-links ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .footer-links a {
-        font-size: 14px;
-    }
-
-
-    .footer-links {
-        order: 1;
-        flex: 2 1 50%;
-        padding: 2px 6px;
-        text-align: left;
-
-    }
-
-    .footer-icon a {
-        width: 34px;
-        height: 34px;
-    }
-
-
-
-    .footer-bottom {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-
-     .hero-img2 {
-        width: 50%;
-        height: 30%;
-      
-    }
-
-
 }
+
+
+    @media (max-width: 600px) {
+
+
+
+        .video-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+
+        }
+
+        .video-play {
+            margin-bottom: 30px;
+            align-items: center;
+
+        }
+
+        .carousel-slide {
+            width: 100%;
+        }
+
+
+        p {
+            font-size: 18px;
+        }
+
+        .hero-img2 {
+            width: 60%;
+            height: 40%;
+
+        }
+
+        .btn {
+            font-size: 12px;
+            padding: 8px 10px;
+        }
+
+        .btn-primary {
+            padding: 10px 10px;
+        }
+
+        .btn-input {
+            padding: 12px 10px;
+        }
+
+        .btn-video {
+            padding: 6px 30px;
+        }
+
+        .slide-btn {
+            padding: 8px 14px;
+            font-size: 14px;
+        }
+
+
+        .stat-wrapper {
+            padding-left: 15px;
+            padding-right: 15px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 20px;
+
+        }
+
+
+        .hero-img2 {
+            display: block;
+            margin: 0 auto;
+            width: 70%;
+            height: auto;
+            position: relative;
+        }
+
+        .video-play-btn {
+            position: absolute;
+            top: 270px;
+            left: 200px;
+            font-size: 1rem;
+
+        }
+    }
+
+
+        @media (max-width: 480px) {
+
+
+            h2 {
+                font-size: 20px;
+                text-align: center;
+
+            }
+
+
+            p {
+                text-align: center;
+                font-size: 16px;
+            }
+
+
+            .btn {
+                padding: 10px 18px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+
+            /* mobile menu*/
+            #mobile-menu-wrapper {
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100vh;
+                padding: 32px 20px;
+                overflow-y: auto;
+            }
+
+
+            .btn-video {
+                font-size: 14px;
+                padding: 10px 14px;
+            }
+
+            .video-filter>button.btn-video {
+                font-size: 13px;
+                padding: 8px;
+                gap: 6px;
+            }
+
+            .video-play>div:first-child {
+                height: 140px;
+            }
+
+            .video-play>div:nth-child(2) {
+                padding: 12px;
+            }
+
+            .carousel-slide {
+                width: 100%;
+            }
+
+            .frecce-button button {
+                padding: 3px 2px;
+                font-size: 10px;
+
+            }
+
+            /* bottoni*/
+            .btn-primary {
+                padding: 10px 30px;
+            }
+
+            .btn-input {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+
+            .slide-btn {
+                padding: 8px 14px;
+                font-size: 13px;
+            }
+
+
+            .theme-switch {
+                display: flex;
+                width: 35px;
+                position: absolute;
+                z-index: 1;
+                margin-left: -12px;
+            }
+
+            .clarity-card {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 12px;
+                padding: 10px 0;
+            }
+
+            .video-filter>button.btn-video {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .video-list {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+
+            .video-play {
+                margin-bottom: 30px;
+                align-items: center;
+
+            }
+
+            input,
+            textarea {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+                margin-bottom: 10px;
+            }
+
+            /*footer*/
+            .footer {
+                padding: 8px 2px;
+            }
+
+            .footer-top {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 2px;
+            }
+
+
+            .footer-img.logo {
+                order: 0;
+                flex: 1 1 100%;
+                text-align: center;
+                margin-bottom: 2px;
+            }
+
+            .footer-links h6 {
+                font-size: 16px;
+
+            }
+
+            .footer-links ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            .footer-links a {
+                font-size: 14px;
+            }
+
+
+            .footer-links {
+                order: 1;
+                flex: 2 1 50%;
+                padding: 2px 6px;
+                text-align: left;
+            }
+
+            .footer-icon a {
+                width: 34px;
+                height: 34px;
+            }
+
+
+
+            .footer-bottom {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+
+            .hero-img2 {
+                display: block;
+                margin: 0 auto;
+                width: 70%;
+                height: auto;
+                position: relative;
+            }
+
+            .video-play-btn {
+                position: absolute;
+                top: 270px;
+                left: 200px;
+                font-size: 1rem;
+
+            }
+
+            .btn {
+                font-size: 14px;
+                padding: 6px 8px;
+            }
+
+            .btn-primary {
+                padding: 10px 30px;
+            }
+
+            .btn-input {
+                padding: 8px 18px;
+            }
+
+            .btn-video {
+                padding: 10px 14px;
+            }
+
+            .slide-btn {
+                padding: 8px 14px;
+                font-size: 14px;
+            }
+
+
+            .stat-wrapper {
+                padding-left: 15px;
+                padding-right: 15px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                margin-bottom: 20px;
+
+            }
+
+            .hero-left h1 {
+                font-size: 60px;
+            }
+
+            .hero-left p {
+                font-size: 16px;
+            }
+
+        }

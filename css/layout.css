@@ -228,6 +228,7 @@ label:after:active {
     line-height: 1.1;
     max-width: 800px;
     white-space: normal;
+    padding-left: 0;
 }
 
 .hero-left p {

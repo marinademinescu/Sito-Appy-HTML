@@ -108,18 +108,26 @@ h6 {
 }
 
 h1 {
+    max-width: 100%;
+    margin: 0 auto 16px auto;
     font-size: 90px;
     font-weight: bold;
     white-space: nowrap;
+    padding-left: 6vw;
+    padding-right: 5vw;
 
 }
 
 
 h2 {
+    max-width: 100%;
+    margin: 0 auto 16px auto;
     font-size: 55px;
     text-align: center;
     white-space: nowrap;
     font-weight: bold;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 h3 {
