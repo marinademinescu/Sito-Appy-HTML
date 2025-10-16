@@ -49,7 +49,7 @@
                     <input type="checkbox" id="dark-mode">
                     <label for="dark-mode" class="theme-switch"></label>
 
-                    <button class="btn btn-primary">Request code</button>
+                    <button class="btn btn-primary request">Request code</button>
 
                     <button class="hamburger" id="hamburger" aria-label="open-menu" aria-expanded="false"
                         aria-controls="primary-navigation"><i class='bx bx-menu'></i></button>
@@ -200,11 +200,12 @@
 
             <div class="video-list">
                 <div class="video-play">
-                    <div> <img src="/assets/immagini/glow-illustration/OIP.jpg" alt=""></div>
+                    <div> <img src="/assets/immagini/glow-illustration/OIP.jpg" alt=""> </div>
                     <div>
                         <a>Using index pages</a>
                         <div>2 Min</div>
                     </div>
+
 
                 </div>
                 <div class="video-play ">
@@ -361,34 +362,51 @@
 
 
     <section class="container testimonials">
-        <div>
-            <div><img src="assets/immagini/img-testimonial/testimonial-01.jpg" alt="1"></div>
-            <div>“ This is a great app and the value is amazing. Since I purchased it I have been using it
-                everyday! Highly recommend it. “</div>
-            <span>—Andy Croll</span><span><a href="">,Appy.com</a></span>
-        </div>
-        <div>
-            <div> <img src="assets/immagini/img-testimonial/testimonial-02.jpg" alt="2"></div>
-            <div>“ This is a great app and the value is amazing. Since I purchased it I have been using it
-                everyday! Highly recommend it. “</div>
-            <span>—Andy Croll</span><span><a href="">,Appy.com</a></span>
+        <div class="testimonial-body">
+            <article class="testimonial-card">
+                <div class="testimonial-img">
+                    <img src="assets/immagini/img-testimonial/testimonial-01.jpg" alt="1">
+                </div>
+                <div class="testimonial-text">“ This is a great app and the value is amazing. Since I purchased it I
+                    have been using it
+                    everyday! Highly recommend it. “</div>
+                <span>—Andy Croll, <a href="">Appy.com</a></span>
+            </article>
+
+            <article class="testimonial-card">
+                <div class="testimonial-img">
+                    <img src="assets/immagini/img-testimonial/testimonial-02.jpg" alt="2">
+                </div>
+                <div class="testimonial-text">“ This is a great app and the value is amazing. Since I purchased it I
+                    have been using it
+                    everyday! Highly recommend it. “</div>
+                <span>—Andy Croll, <a href="">Appy.com</a></span>
+            </article>
+
+            <article class="testimonial-card">
+                <div class="testimonial-img">
+                    <img src="assets/immagini/img-testimonial/testimonial-03.jpg" alt="3">
+                </div>
+
+                <div class="testimonial-text">“ This is a great app and the value is amazing. Since I purchased it I
+                    have been using it
+                    everyday! Highly recommend it. “</div>
+
+                <span>—Andy Croll, <a href="">Appy.com</a></span>
+            </article>
+
+            <article class="testimonial-card">
+                <div class="testimonial-img">
+                    <img src="assets/immagini/img-testimonial/testimonial-04.jpg" alt="4">
+                </div>
+                <div class="testimonial-text">“ This is a great app and the value is amazing. Since I purchased it I
+                    have been using it
+                    everyday! Highly recommend it. “</div>
+
+                <span>—Andy Croll, <a href="">Appy.com</a></span>
+            </article>
         </div>
 
-        <div>
-            <div> <img src="assets/immagini/img-testimonial/testimonial-03.jpg" alt="3"></div>
-
-            <div>“ This is a great app and the value is amazing. Since I purchased it I have been using it
-                everyday! Highly recommend it. “</div>
-
-            <span>—Andy Croll</span><span><a href="">,Appy.com</a></span>
-        </div>
-        <div>
-            <div> <img src="assets/immagini/img-testimonial/testimonial-04.jpg" alt="4"></div>
-            <p>“ This is a great app and the value is amazing. Since I purchased it I have been using it
-                everyday! Highly recommend it. “</p>
-
-            <span>—Andy Croll</span><span><a href="">,Appy.com</a></span>
-        </div>
 
 
     </section>
@@ -396,19 +414,23 @@
     <section class="container clarity">
         <h2>Put clarity at the center of <br> your website</h2>
         <div class="clarity-card">
-            <div class="card"><i class='bx bx-objects-vertical-bottom'></i>
+            <div class="card clarity-slide a">
+                <div><i class='bx bx-objects-vertical-bottom'></i></div>
                 <div>Simpler Sharing</div>
                 <div>Lorem ipsum dolor amet sit consect adipiscing.</div>
             </div>
-            <div class="card"><i class='bx bx-scatter-chart'></i>
+            <div class="card clarity-slide b">
+                <div><i class='bx bx-scatter-chart'></i></div>
                 <div>Simpler Sharing</div>
                 <div>Lorem ipsum dolor amet sit consect adipiscing.</div>
             </div>
-            <div class="card"><i class='bx bxl-netlify'></i>
+            <div class="card clarity-slide c">
+                <div><i class='bx bxl-netlify'></i></div>
                 <div>Simpler Sharing</div>
                 <div>Lorem ipsum dolor amet sit consect adipiscing.</div>
             </div>
-            <div class="card"><i class='bx bx-qr'></i>
+            <div class="card clarity-slide d">
+                <div><i class='bx bx-qr'></i></div>
                 <div>Simpler Sharing</div>
                 <div>Lorem ipsum dolor amet sit consect adipiscing.</div>
             </div>
@@ -419,60 +441,74 @@
     </section>
 
     <section class="container free">
-        <h3>Free until you're ready <br> to launch</h3>
-        <div>
-            <input id="box-input" type="text" placeholder="Phone number ">
-            <button class="btn btn-primary btn-input">Request code</button>
+        <div class="free-body">
+            <div class="free-text">
+                <h3>Free until you're ready <br> to launch</h3>
+            </div>
+
+            <div class="free-input">
+                <input id="box-input" type="text" placeholder="Phone number ">
+                <button class="btn btn-primary btn-input ">Request code</button>
+            </div>
         </div>
+
 
 
     </section>
 
     <footer class="container footer">
         <div class="footer-top logo">
-            <img src="/assets/immagini/img-logo/idOyeCj4_W_logos.png" alt="logo">
-            <div class="footer-links">
-                <h6>Products</h6>
-                <ul>
-                    <li><a href="">Drag And Drop</a></li>
-                    <li><a href="">Visual Studio X</a></li>
-                    <li><a href="">Easy Content</a></li>
-                </ul>
+            <div class="footer-img"><img src="/assets/immagini/img-logo/idOyeCj4_W_logos.png" alt="logo"></div>
+
+            <div class="footer-body">
+                <div class="footer-links">
+                    <div>
+                        <h6>Products</h6>
+                        <ul>
+                            <li><a href="">Drag And Drop</a></li>
+                            <li><a href="">Visual Studio X</a></li>
+                            <li><a href="">Easy Content</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div>
+                    <h6>Resources</h6>
+                    <ul>
+                        <li><a href="">Industries and tools</a></li>
+                        <li><a href="">Use cases</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Online events</a></li>
+                        <li><a href="">Nostrud exercitation</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6>Company</h6>
+                    <ul>
+                        <li><a href="">Diversity & inclusion</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Press</a></li>
+                        <li><a href="">Customer stories</a></li>
+                        <li><a href="">Online communities</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6>Support</h6>
+                    <ul>
+                        <li><a href="">Documentation</a></li>
+                        <li><a href="">Tutorials & guides</a></li>
+                        <li><a href="">Webinars</a></li>
+                        <li><a href="">Open-source</a></li>
+                    </ul>
+
+
+                </div>
             </div>
 
-            <div>
-                <h6>Resources</h6>
-                <ul>
-                    <li><a href="">Industries and tools</a></li>
-                    <li><a href="">Use cases</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Online events</a></li>
-                    <li><a href="">Nostrud exercitation</a></li>
-                </ul>
-            </div>
 
-            <div>
-                <h6>Company</h6>
-                <ul>
-                    <li><a href="">Diversity & inclusion</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Press</a></li>
-                    <li><a href="">Customer stories</a></li>
-                    <li><a href="">Online communities</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h6>Support</h6>
-                <ul>
-                    <li><a href="">Documentation</a></li>
-                    <li><a href="">Tutorials & guides</a></li>
-                    <li><a href="">Webinars</a></li>
-                    <li><a href="">Open-source</a></li>
-                </ul>
-
-
-            </div>
 
         </div>
         <div class="footer-bottom">
