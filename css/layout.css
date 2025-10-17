@@ -212,6 +212,14 @@ label:after:active {
     max-width: 700px;
 }
 
+.hero-left h1 {
+     font-size: clamp(28px, 10vw, 80px); /* scala da 24px a 80px in base alla larghezza */
+    
+}
+
+
+
+
 .hero-right {
     position: relative;
     width: 100%;
@@ -223,13 +231,7 @@ label:after:active {
 
 }
 
-.hero-left h1 {
-    font-size: 80px;
-    line-height: 1.1;
-    max-width: 800px;
-    white-space: normal;
-    padding-left: 0;
-}
+
 
 .hero-left p {
     padding-left: 0;
@@ -304,11 +306,14 @@ label:after:active {
 
 
 
+
+
 .stat-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--gap);
     margin-top: 60px;
+    margin-bottom: 40px;
 }
 
 .stat-item {
@@ -431,8 +436,8 @@ label:after:active {
     display: grid;
     grid-template-columns: repeat(2, minmax(35px, 1fr));
     align-items: start;
-    gap: 30px;
-    width: 45%;
+    gap: 20px;
+    width: 65%;
     cursor: pointer;
     margin-right: 0;
     padding-bottom: 60px;
@@ -503,11 +508,15 @@ label:after:active {
     color: var(--text-light);
 }
 
+
+
 .full {
     background-color: var(--background-dark);
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    min-height: 100vh;
 }
+
+
 
 .start-header {
     padding-top: 20px;
@@ -515,6 +524,7 @@ label:after:active {
 
 .start-header h2 {
     color: var(--text-light);
+    margin-top: 40px;
 }
 
 .start-body {
@@ -675,6 +685,7 @@ label:after:active {
     margin-left: 8px;
 }
 
+
 .clarity-card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -726,9 +737,11 @@ label:after:active {
 
 .free {
     background: var(--background-dark);
-    padding: 70px;
+    padding: 50px;
+
 
 }
+
 
 .free-body {
     display: flex;

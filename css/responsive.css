@@ -50,12 +50,16 @@
 
     }
 
-
+   
 }
 
 
 
 @media (max-width: 992px) {
+
+
+    
+
     .hamburger {
         display: block;
     }
@@ -221,10 +225,7 @@
 
 @media (max-width: 768px) {
 
-    h1 {
-        font-size: 70px;
-    }
-
+  
 
     h2 {
         font-size: 35px;
@@ -386,6 +387,89 @@
     textarea {
         padding: 12px 20px;
         font-size: 0.95rem;
+
+    }
+
+    .hero-left {
+        max-width: 100%;
+        margin: 0 auto 20px auto;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+
+
+    }
+
+
+    form {
+        flex-direction: column;
+        align-items: stretch;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: 0 40px;
+        gap: 6px;
+
+    }
+
+
+
+
+
+    form input,
+    form button {
+        width: 100%;
+
+    }
+
+    .free {
+        max-width: 100%;
+        margin: 0 auto 20px auto;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .free h2 {
+        flex-direction: column;
+        align-items: stretch;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: 0 70px;
+    }
+
+    .free-input {
+        flex-direction: column;
+        align-items: stretch;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: 0 ;
+
+    }
+
+    .free-input input,
+    .free-input button {
+        width: 100%;
+    }
+
+    .free-input button {
+        margin-top: 8px;
+
     }
 
     .footer {
@@ -561,11 +645,14 @@
 
 
 @media (max-width: 480px) {
-
+ 
 
     h2 {
         font-size: 20px;
         text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+
 
     }
 
@@ -581,6 +668,9 @@
         width: 100%;
         box-sizing: border-box;
     }
+
+
+
 
 
     /* mobile menu*/
@@ -761,12 +851,13 @@
     .btn-primary {
         padding: 14px 16px;
         display: inline-block;
-        width: 30%;
+        width: 80%;
 
     }
 
     .btn-input {
-        padding: 8px 18px;
+        padding: 8px 40px;
+        width: 40%;
     }
 
     .btn-video {
@@ -806,9 +897,7 @@
 
     }
 
-    .hero-left h1 {
-        font-size: 60px;
-    }
+
 
     .hero-left p {
         font-size: 16px;
