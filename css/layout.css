@@ -354,8 +354,8 @@ label:after:active {
 
 .carousel-wrapper {
     display: flex;
-    gap: 20px;
-    flex-wrap: nowrap;
+    gap: 10px;
+   
 }
 
 

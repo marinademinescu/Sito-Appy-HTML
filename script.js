@@ -11,21 +11,21 @@ const playBtn = document.querySelector('.video-play-btn')
 
 
 playBtn.addEventListener('click', () => {
-    video.style.display = 'block';  
-    video.play();                   
-    playBtn.style.display = 'none';  
+  video.style.display = 'block';
+  video.play();
+  playBtn.style.display = 'none';
 })
 
 document.addEventListener('click', (e) => {
-    
-    if (!video.contains(e.target) && !playBtn.contains(e.target)) {
-        if (video.style.display === 'block') {
-            video.pause();
-            video.currentTime = 0;
-            video.style.display = 'none';
-            playBtn.style.display = 'block';
-        }
+
+  if (!video.contains(e.target) && !playBtn.contains(e.target)) {
+    if (video.style.display === 'block') {
+      video.pause();
+      video.currentTime = 0;
+      video.style.display = 'none';
+      playBtn.style.display = 'block';
     }
+  }
 })
 
 
@@ -55,44 +55,42 @@ mobileDropdownLinks.forEach(link => {
 })
 
 // Carousel slide
-const track = document.querySelector('.carousel-wrapper');
-const slides = Array.from(track.children);
+
+const carousel = document.querySelector('.carousel-wrapper');
+const slides = Array.from(carousel.children);
 const prevBtn = document.querySelector('.button-prev');
 const nextBtn = document.querySelector('.button-next');
 
 let current = 0;
 
 function updateCarousel() {
-  slides.forEach((slide, i) => slide.classList.remove('active'));
-  
-  slides[current].classList.add('active');
+  slides.forEach((slide, i) => slide.classList.remove('active'))
+  slides[current].classList.add('active')
 
-  // calcola l'offset per centrare la slide attiva
-  const slideWidth = slides[0].getBoundingClientRect().width + 20; // + gap
-  const viewportWidth = track.parentElement.offsetWidth;
-  const offset = -current * slideWidth + (viewportWidth / 2 - slideWidth / 2);
+  const slideWidth = slides[0].getBoundingClientRect().width + 20; 
+  const viewportWidth = carousel.parentElement.offsetWidth;
+  const offset = -current * slideWidth + (viewportWidth /4 - slideWidth / 2)
 
-  track.style.transform = `translateX(${offset}px)`;
+  carousel.style.transform = `translateX(${offset}px)`
 }
 
-
-window.addEventListener('resize', updateCarousel);
-updateCarousel();
-
-
-// loop infinito
 prevBtn.addEventListener('click', () => {
-  current = (current === 0) ? slides.length - 1 : current - 1;
-  updateCarousel();
-});
+  current = (current + 1) % slides.length;
+    updateCarousel();
+})
 
 nextBtn.addEventListener('click', () => {
-  current = (current === slides.length - 1) ? 0 : current + 1;
-  updateCarousel();
-});
+    current = (current - 1 + slides.length) % slides.length
+    updateCarousel();
+})
 
-// inizializza
-updateCarousel();
+window.addEventListener('load', updateCarousel)
+window.addEventListener('resize', updateCarousel)
+
+
+
+
+
 
 
 
@@ -102,13 +100,13 @@ const sections = document.querySelectorAll('.video-body');
 
 
 buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Rimuovi classe active da tutti i bottoni
-        buttons.forEach(btn => btn.classList.remove('active'))
-        // Aggiungi active al bottone cliccato
-        button.classList.add('active')
-       
-    })
+  button.addEventListener('click', () => {
+    // Rimuovi classe active da tutti i bottoni
+    buttons.forEach(btn => btn.classList.remove('active'))
+    // Aggiungi active al bottone cliccato
+    button.classList.add('active')
+
+  })
 })
 
 
