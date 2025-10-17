@@ -7,20 +7,26 @@ toggle.addEventListener('change', () => {
 
 // video play
 const video = document.querySelector('.hero-video')
+const playBtn = document.querySelector('.video-play-btn')
 
-video.addEventListener('click', () => {
-  if (video.classList.contains('active')) {
-    video.classList.add('active')
-    video.play()
-  } else {
 
-    video.pause()
-    video.currentTime = 0
-    video.classList.remove('active')
-  }
+playBtn.addEventListener('click', () => {
+    video.style.display = 'block';  
+    video.play();                   
+    playBtn.style.display = 'none';  
 })
 
-
+document.addEventListener('click', (e) => {
+    
+    if (!video.contains(e.target) && !playBtn.contains(e.target)) {
+        if (video.style.display === 'block') {
+            video.pause();
+            video.currentTime = 0;
+            video.style.display = 'none';
+            playBtn.style.display = 'block';
+        }
+    }
+})
 
 
 // Hamburger toggle

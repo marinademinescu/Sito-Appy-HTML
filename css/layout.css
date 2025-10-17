@@ -214,6 +214,7 @@ label:after:active {
 
 .hero-left h1 {
      font-size: clamp(28px, 10vw, 80px); /* scala da 24px a 80px in base alla larghezza */
+
     
 }
 
@@ -237,8 +238,7 @@ label:after:active {
     padding-left: 0;
     white-space: wrap;
 }
-
-.hero-img2 {
+hero-img2 {
     width: 100%;
     height: 55%;
     margin-left: 200px;
